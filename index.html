@@ -19,7 +19,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Urbanist:wght@300&display=swap"
+        rel="stylesheet">
 
 </head>
 <style>
@@ -42,19 +43,27 @@
         filter: brightness(80%);
     }
 
-    .contactIcon a {
+    /* .contactIcon a {
         text-decoration: none;
         color: rgb(102, 100, 100);
     }
     .contactIcon a:hover {
         text-decoration: none;
         color: rgb(56, 56, 56);
-    }
-    .nav-item{
+    } */
+    .nav-item {
+        transition: .5s ease-in-out;
         font-weight: 400;
     }
-    .nav-item:hover{
+
+    .nav-item:hover {
         font-weight: 700;
+    }
+
+    .item img {
+        height: 300px;
+        width: 400px;
+        padding: 5px;
     }
 </style>
 
@@ -108,15 +117,18 @@
         <div class="container-lg">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="display-2 text-muted">Jonny & Jolly's</div>
-                        <div class="display-6 text-muted">Do good. Be nice. Order pizza. Repeat.</div>
-                    </h1>
+                    <h2>
+                        <div class="display-3 text-muted">Jonny & Jolly's</div>
+                    </h2>
+                    <h3>
+                        <div class="text-muted">Do good. Be nice. Order pizza. Repeat.</div>
+                    </h3>
                     <p class="lead text-muted">"Pizza is not a 'trend' it's a way of life"</p>
-                    <p class="lead text-muted">Successfully delivered <strong class="text-success fw-bold">500+</strong> pizza's...</p>
+                    <p class="lead text-muted">Successfully delivered <strong class="text-success fw-bold">500+</strong>
+                        pizza's...</p>
                     <a href="#menu" class="btn btn-secondary">Order Now</a>
                 </div>
-                <div class="col-md-5 text-center d-none d-md-block">
+                <div class="col-md-5 text-center">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"
@@ -374,35 +386,50 @@
                 <h2 class="text-secondary"><i class="bi bi-images"></i> Our Gallery</h2>
                 <p class="text-muted">What our stuff looks like..</p>
             </div>
-            <div class="row mt-4 pt-3 g-5">
+            <div class="row pt-0 py-0">
                 <div class="item col-lg-4 col-md-6">
-                    <a href="./assets/real.jpeg" class="fancybox" data-fancybox="gallery1">
-                        <img src="./assets/real.jpeg" width="100%" height="100%" alt="">
+                    <a href="./assets/5.jpeg" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/5.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="item col-lg-4 col-md-6">
-                    <a href="./assets/pasta.png" class="fancybox" data-fancybox="gallery1">
-                        <img src="./assets/pasta.png" width="100%" height="100%" alt="">
+                    <a href="./assets/4.jpeg" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/4.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="item col-lg-4 col-md-6">
-                    <a href="./assets/pizza.png" class="fancybox" data-fancybox="gallery1">
-                        <img src="./assets/pizza.png" width="100%" height="100%" alt="">
+                    <a href="./assets/10.jpeg" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/10.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="item col-lg-4 col-md-6">
-                    <a href="./assets/sandwich.png" class="fancybox" data-fancybox="gallery1">
-                        <img src="./assets/sandwich.png" width="100%" height="100%" alt="">
+                    <a href="./assets/2.PNG" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/2.PNG" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="item col-lg-4 col-md-6">
-                    <a href="./assets/pizza.png" class="fancybox" data-fancybox="gallery1">
-                        <img src="./assets/pizza3.png" width="100%" height="100%" alt="">
+                    <a href="./assets/1.PNG" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/1.PNG" class="img-fluid" alt="">
                     </a>
                 </div>
                 <div class="item col-lg-4 col-md-6">
-                    <a href="./assets/sandwich.png" class="fancybox" data-fancybox="gallery1">
-                        <img src="./assets/pizza4.png" width="100%" height="100%" alt="">
+                    <a href="./assets/6.jpeg" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/6.jpeg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="item col-lg-4 col-md-6">
+                    <a href="./assets/7.jpeg" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/7.jpeg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="item col-lg-4 col-md-6">
+                    <a href="./assets/8.jpeg" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/8.jpeg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="item col-lg-4 col-md-6">
+                    <a href="./assets/9.jpeg" class="fancybox" data-fancybox="gallery1">
+                        <img src="./assets/9.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
             </div>
@@ -419,7 +446,7 @@
             <div class="row justify-content align-items-center my-3 py-5">
                 <div class="col-lg-12">
                     <div class="list-group text-center align-items-center">
-                        <div class="list-group-item py-3">
+                        <div class="list-group-item py-3 my-2">
                             <h5 class="mb-1">Awesome. <i class="bi bi-star-fill"></i></h5>
                             <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor numquam
                                 voluptates.</p>
@@ -486,8 +513,8 @@
                             <h5 class="card-title">Connect Us</h5>
                             <span class="contactIcon">
                                 <a href="" target="_blank"><i class="bi bi-instagram px-2 fa-2x"></i></a>
-                                <a href=""><i class="bi bi-facebook px-2 fa-2x"></i></a>
-                                <a href=""><i class="bi bi-whatsapp px-2 fa-2x"></i></a>
+                                <a href=""><i class="fa fa-facebook-official px-2 fa-2x"></i></a>
+                                <a href=""><i class="fa fa-whatsapp px-2 fa-2x"></i></a>
                             </span>
                         </div>
                     </div>
