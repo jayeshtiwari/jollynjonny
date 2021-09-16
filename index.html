@@ -25,32 +25,45 @@
 </head>
 <style>
     body {
-        /* background: linear-gradient(90deg, #82c1f5 20%, #48e05d); */
         background-color: rgba(209, 218, 226, 0.884);
         font-family: "Poppins";
     }
 
     .item {
-        transition: .5s ease-in-out;
+        transition: .3s ease-in-out;
     }
-
-    /* .item img{
-        height: 300px;
-        width: 400px;
-    } */
 
     .item:hover {
         filter: brightness(80%);
     }
 
-    /* .contactIcon a {
-        text-decoration: none;
-        color: rgb(102, 100, 100);
+    .contactIcon a {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        color: white;
+        background: #2c3e50;
+        margin: 0 6px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: .4s;
+        font-size: 18px;
     }
-    .contactIcon a:hover {
-        text-decoration: none;
-        color: rgb(56, 56, 56);
-    } */
+
+    .contactIcon a:hover,.bi-facebook{
+        background: #1a0dab;
+    }
+    
+
+    .contactIcon a i {
+        transition: .4s;
+    }
+
+    .contactIcon a:hover>i {
+        transform: scale(1.6) rotate(25deg);
+    }
+
     .nav-item {
         transition: .5s ease-in-out;
         font-weight: 400;
@@ -64,10 +77,20 @@
         height: 300px;
         width: 400px;
         padding: 5px;
+        border-radius: 30%;
     }
-    /* .list-group-item{
-      s  width: 800px;
-    } */
+
+    .iconHeader {
+        color: chocolate;
+    }
+    .card{
+        border-radius: 30px;
+        /* background-color: #d6dee5; */
+    }
+    .list-group-item{
+        border-radius: 50px 5px;
+    }
+    
 </style>
 
 <body>
@@ -78,7 +101,7 @@
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
                 <span class="fw-bold text-secondary text-muted">
-                    Jonny & Jolly's Pizza <i class="fas fa-pizza-slice"></i>
+                    Jonny & Jolly's Pizza <i class="fas fa-utensils"></i>
                 </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -181,8 +204,9 @@
                 <p class="lead text-muted">Choose whatever you like</p>
             </div>
             <div class="row my-4 align-items-center justify-content-center">
+
                 <div class="col-8 col-lg-3">
-                    <div class="card border-0 my-5">
+                    <div class="card border-1 my-5 face-front z-depth-2">
                         <div class="card-body text-center py-4">
                             <h4 class="card-title">Veg. Cheese Pizza</h4>
                             <p class="card-subtitle lead">Ingredient</p>
@@ -190,14 +214,16 @@
                             <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>119</p>
                             <p class="card-text mx-5 text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <a data-bs-toggle="modal" data-bs-target="#orderHereModel"
-                                class="btn btn-outline-primary mt-3">Order Now</a>
+                                class="btn btn-outline-secondary mt-3">Order Now</a>
 
                         </div>
                     </div>
+
+
                 </div>
                 <div class="col-9 col-lg-3">
-                    <div class="card border-secondary border-2 my-5">
-                        <div class="card-header text-center text-primary">Most Popular</div>
+                    <div class="card border-secondary border-1 my-5">
+                        <div class="card-header text-center text-secondary">Most Popular</div>
                         <div class="card-body text-center py-5">
                             <h4 class="card-title">Veg.Cheese Paneer Pizza</h4>
                             <p class="card-subtitle lead">Ingredient</p>
@@ -205,14 +231,14 @@
                             <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>159</p>
                             <p class="card-text mx-5 text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <a data-bs-toggle="modal" data-bs-target="#orderHereModel"
-                                class="btn btn-outline-primary mt-3">Order Now</a>
+                                class="btn btn-outline-secondary mt-3">Order Now</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-9 col-lg-3">
-                    <div class="card border-secondary border-2 my-5">
-                        <div class="card-header text-center text-primary">Second Most Popular</div>
+                    <div class="card border-secondary border-1 my-5">
+                        <div class="card-header text-center text-secondary">Second Most Popular</div>
                         <div class="card-body text-center py-5">
                             <h4 class="card-title">Veg. Cheese Corn Pizza</h4>
                             <p class="card-subtitle lead">Ingredient</p>
@@ -220,13 +246,13 @@
                             <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>139</p>
                             <p class="card-text mx-5 text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <a data-bs-toggle="modal" data-bs-target="#orderHereModel"
-                                class="btn btn-outline-primary mt-3">Order Now</a>
+                                class="btn btn-outline-secondary mt-3">Order Now</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-8 col-lg-3">
-                    <div class="card border-0 my-5">
+                    <div class="card border-1 my-5">
                         <div class="card-body text-center py-4">
                             <h4 class="card-title">Cheese Onion Pizza</h4>
                             <p class="card-subtitle lead">Ingredient</p>
@@ -234,7 +260,7 @@
                             <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>99</p>
                             <p class="card-text mx-5 text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <a data-bs-toggle="modal" data-bs-target="#orderHereModel"
-                                class="btn btn-outline-primary mt-3">Order Now</a>
+                                class="btn btn-outline-secondary mt-3">Order Now</a>
 
                         </div>
                     </div>
@@ -243,7 +269,7 @@
             </div>
             <div class="row my-4 align-items-center justify-content-center">
                 <div class="col-8 col-lg-3 col-xl-3">
-                    <div class="card border-0 my-5">
+                    <div class="card border-1 my-5">
                         <div class="card-body text-center py-4">
                             <h4 class="card-title">Cheese Garlic Bread</h4>
                             <p class="card-subtitle lead">Ingredient</p>
@@ -251,13 +277,13 @@
                             <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>120</p>
                             <p class="card-text mx-5 text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <a data-bs-toggle="modal" data-bs-target="#orderHereModel"
-                                class="btn btn-outline-primary mt-3">Order Now</a>
+                                class="btn btn-outline-secondary mt-3">Order Now</a>
 
                         </div>
                     </div>
                 </div>
                 <div class="col-8 col-lg-3">
-                    <div class="card border-0 my-5">
+                    <div class="card border-1 my-5">
                         <div class="card-body text-center py-4">
                             <h4 class="card-title">Red Sauce Pasta</h4>
                             <p class="card-subtitle lead">Ingredient</p>
@@ -265,13 +291,13 @@
                             <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>100</p>
                             <p class="card-text mx-5 text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <a data-bs-toggle="modal" data-bs-target="#orderHereModel"
-                                class="btn btn-outline-primary mt-3">Order Now</a>
+                                class="btn btn-outline-secondary mt-3">Order Now</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-8 col-lg-3">
-                    <div class="card border-0 my-5">
+                    <div class="card border-1 my-5">
                         <div class="card-body text-center py-4">
                             <h4 class="card-title">Veg. Sandwich</h4>
                             <p class="card-subtitle lead">Ingredient</p>
@@ -279,13 +305,13 @@
                             <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>50</p>
                             <p class="card-text mx-5 text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <a data-bs-toggle="modal" data-bs-target="#orderHereModel"
-                                class="btn btn-outline-primary mt-3">Order Now</a>
+                                class="btn btn-outline-secondary mt-3">Order Now</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-8 col-lg-3 col-xl-3">
-                    <div class="card border-0 my-5">
+                    <div class="card border-1 my-5">
                         <div class="card-body text-center py-4">
                             <h4 class="card-title">White Sauce Pasta</h4>
                             <p class="card-subtitle lead">Ingredient</p>
@@ -293,22 +319,11 @@
                             <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>100</p>
                             <p class="card-text mx-5 text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <a data-bs-toggle="modal" data-bs-target="#orderHereModel"
-                                class="btn btn-outline-primary mt-3">Order Now</a>
+                                class="btn btn-outline-secondary mt-3">Order Now</a>
 
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-8 col-lg-3 col-xl-3">
-                    <div class="card border-0 my-5">
-                        <div class="card-body text-center py-4">
-                            <h4 class="card-title">White Sauce Pasta</h4>
-                            <p class="display-5 fw-bold text-primary my-4"><i class="fa fa-rupee"></i>100</p>
-                            <img src="/assets/download.png" class="card-img-bottom img-fluid" alt="...">
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#contact" class="btn btn-outline-primary mt-3">Order Now</a>
-                        </div>
-                    </div>
-                </div> -->
 
             </div>
         </div>
@@ -389,48 +404,48 @@
                 <h2 class="text-secondary"><i class="bi bi-images"></i> Our Gallery</h2>
                 <p class="text-muted">What our stuff looks like..</p>
             </div>
-            <div class="row pt-0 py-0">
-                <div class="item col-lg-4 col-md-6">
+            <div class="row pt-0 py-4">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/5.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/5.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="item col-lg-4 col-md-6">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/4.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/4.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="item col-lg-4 col-md-6">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/10.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/10.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="item col-lg-4 col-md-6">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/2.PNG" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/2.PNG" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="item col-lg-4 col-md-6">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/1.PNG" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/1.PNG" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="item col-lg-4 col-md-6">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/6.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/6.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="item col-lg-4 col-md-6">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/7.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/7.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="item col-lg-4 col-md-6">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/8.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/8.jpeg" class="img-fluid" alt="">
                     </a>
                 </div>
-                <div class="item col-lg-4 col-md-6">
+                <div class="item col-lg-3 col-md-6">
                     <a href="./assets/9.jpeg" class="fancybox" data-fancybox="gallery1">
                         <img src="./assets/9.jpeg" class="img-fluid" alt="">
                     </a>
@@ -451,7 +466,8 @@
                     <div class="list-group text-center align-items-center">
                         <div class="list-group-item py-3 my-2 w-50">
                             <h5 class="mb-1">Awesome. <i class="bi bi-star-fill"></i></h5>
-                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore ex aliquam.</p>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore ex
+                                aliquam.</p>
                             <small>Review by <strong>Gokul Village member</strong></small>
                         </div>
                         <div class="list-group-item py-3 my-2 w-50">
@@ -507,17 +523,17 @@
                         <div class="card-body text-center py-4">
                             <h4 class="card-title">Let's Talk</h4>
                             <p class="card-subtitle lead">Timing 10 AM to 8 PM</p>
-                            <p class="fw-bold text-primary"> +91-7425805103 <br /> +91-9829028625</p>
+                            <p class="fw-bold text-muted"> +91-7425805103 <br> +91-9829028625</p>
                             <p class="card-text text-muted fw-bold">Address : Plot No. 32 , RK Puram , Gokul Village ,
                                 <br>Udaipur , Rajasthan (India)
                             </p>
-
+                            <hr>
                             <h5 class="card-title">Connect Us</h5>
-                            <span class="contactIcon">
-                                <a href="" target="_blank"><i class="bi bi-instagram px-2 fa-2x"></i></a>
-                                <a href=""><i class="fa fa-facebook-official px-2 fa-2x"></i></a>
-                                <a href=""><i class="fa fa-whatsapp px-2 fa-2x"></i></a>
-                            </span>
+                            <div class="contactIcon">
+                                <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></i></a>
+                                <a href=""><i class="bi bi-whatsapp"></i></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -554,7 +570,7 @@
     </section>
 
     <section id="copyright" class="bg-dark">
-        <div class="container-lg">
+        <div class="container-lg pt-3">
             <div class="row text-center align-items-center">
                 <div class="col-mg-12 col-md-12">
                     <p class="text-muted">Copyright <i class="fas fa-copyright"></i> reserved to jonnynjolly.in</p>
